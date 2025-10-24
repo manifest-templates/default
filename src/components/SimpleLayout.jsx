@@ -15,4 +15,5 @@ function SimpleLayout({ children }) {
     </div>
   )
 }
+
 export default SimpleLayout
