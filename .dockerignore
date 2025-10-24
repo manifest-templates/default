@@ -1,0 +1,13 @@
+# Exclude environment files from Docker image
+.env
+.env.*
+
+# Exclude local development files
+node_modules
+npm-debug.log
+.git
+.gitignore
+
+# Exclude OS files
+.DS_Store
+Thumbs.db

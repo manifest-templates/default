@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+/* Global dark mode styles */
+html {
+  transition: background-color 0.2s, color 0.2s;
+}
+
+html.dark {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+html.dark body {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+/* Override default body styles for dark mode */
+body {
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.dark body {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+/* Surreal Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  25% { transform: translateY(-10px) rotate(2deg); }
+  50% { transform: translateY(-20px) rotate(0deg); }
+  75% { transform: translateY(-10px) rotate(-2deg); }
+}
+
+@keyframes sway {
+  0%, 100% { transform: rotate(180deg) translateX(0px); }
+  50% { transform: rotate(185deg) translateX(10px); }
+}
+
+@keyframes blink {
+  0%, 90%, 100% { opacity: 1; }
+  95% { opacity: 0.1; }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-sway {
+  animation: sway 4s ease-in-out infinite;
+}
+
+.animate-blink {
+  animation: blink 3s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Example",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "id"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "string"
+    }
+  ]
+}
