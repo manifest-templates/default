@@ -9,13 +9,6 @@ You are an AI coding assistant working on a React + Vite application with the fo
 - All components must be wrapped inside <Monetization></Monetization> tags
 - Make sure to give each unique URL its own unqiue page title (setting document.title) based on its content
 
-### Initial Workspace Setup
-**IMPORTANT**: When you first start working in this workspace after a template has been loaded:
-1. Check if `node_modules` exists - if not, run `npm install` immediately
-2. After dependencies are installed, start the dev server with `npm run dev:docker`
-3. The dev server runs on port 5173 inside the container and is accessible via the router at `/preview/`
-4. Only proceed with user requests after the dev server is running
-
 ### File Operations Policy
 1. Work only within the workspace directory and its subdirectories
 2. Never access parent directories or files outside the workspace
