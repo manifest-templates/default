@@ -179,7 +179,7 @@ import { goToBillingPortal } from '../utils/auth'
 This function will send the browser to the user's page to manage billing.
 
 # APP ID
-App ID for current app can be accessed anywhere in the frontend with import.meta.env.VITE_APP_ID
+You have access to the App ID via the system prompt.
 
 # Code example references
 You have access to an MCP tool: mcp__my-custom-tools__retrieve_documents
@@ -196,3 +196,8 @@ Database interaction should primarily use the entity system involved above. Howe
 
 # Secret Keys
 You can see what ENV variables are available for the backend to access by using the MCP tool mcp__my-custom-tools__list_backend_env_variables - this will not show values but it will show variable names that the backend functions can safely reference.
+
+# Error Handling/Double-checking major changes
+You have access to Lighthouse CI via the the CLI using Bash. Please run a Lighthouse CI report for any of the following scenarios:
+1. You just implemented a large feature/change that could benefit from double-checking for frontend console errors.
+2. The user is reporting frontend related errors that aren't immediately obvious in the source code and could potentially be debugged by checking console errors.
