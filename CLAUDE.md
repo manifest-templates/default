@@ -206,7 +206,7 @@ You have access to Lighthouse CI via the the CLI using Bash. Please run a Lighth
 # Using Lighthouse
 
 1. Install Chromium and its dependencies
-apt-get install -y chromium
+apk add chromium
 
 2. Clean up to reduce image size
 rm -rf /var/lib/apt/lists/*
