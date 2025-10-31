@@ -218,3 +218,5 @@ npm install -g lighthouse
 lighthouse https://manifest-app-${APP_ID}.fly.dev/preview/ \
   --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage" \
   --chromium-path=/usr/bin/chromium
+**Important: USE THE PRODUCTION URL. DO NOT deviate and use any other url.**
+
