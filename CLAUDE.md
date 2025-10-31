@@ -201,3 +201,20 @@ You can see what ENV variables are available for the backend to access by using 
 You have access to Lighthouse CI via the the CLI using Bash. Please run a Lighthouse CI report for any of the following scenarios:
 1. You just implemented a large feature/change that could benefit from double-checking for frontend console errors.
 2. The user is reporting frontend related errors that aren't immediately obvious in the source code and could potentially be debugged by checking console errors.
+**Important: Please use the below instructions to run lighthouse. DO NOT deviate from these 4 steps. The first 3 are only for initial setup.**
+
+# Using Lighthouse
+
+1. Install Chromium and its dependencies
+apt-get install -y chromium
+
+2. Clean up to reduce image size
+rm -rf /var/lib/apt/lists/*
+
+3. Install Lighthouse globally
+npm install -g lighthouse
+
+4. Run Lighthouse with Chromium
+lighthouse https://manifest-app-${APP_ID}.fly.dev/preview/ \
+  --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage" \
+  --chromium-path=/usr/bin/chromium
